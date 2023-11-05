@@ -22,7 +22,6 @@ channel.QueueDeclare(
     queue: queueName,
     exclusive: false //false because of maybe other consumers want to consume this queue's data
     );
-
 channel.QueueBind(
     queue: queueName,
     exchange: exchangeName,
